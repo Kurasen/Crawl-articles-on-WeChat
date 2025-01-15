@@ -65,8 +65,6 @@ def get_page():
     content_json = requests.get(url, headers=headers, params=data).json()
 
     count = int(content_json["app_msg_cnt"]) if "app_msg_cnt" in content_json else 0
-    i =1
-    print(i)
 
     # 检查JSON结构体数据
     #print(json.dumps(content_json, ensure_ascii=False, indent=4))
