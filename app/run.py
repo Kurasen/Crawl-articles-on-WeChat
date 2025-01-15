@@ -29,7 +29,7 @@ user_agent_list = [
 
 # 目标url
 url = "https://mp.weixin.qq.com/cgi-bin/appmsg"
-cookie = "xxx"
+cookie = "appmsglist_action_3964133034=card; RK=RDXs/Gn3ex; ptcz=eb46612112815f41633d0113218f612461c529758134a9c6eb3fcad11f0acbd7; pac_uid=0_5bacfc0fbcdfd; iip=0; _qimei_uuid42=1811f132f381000cb401369215bc88b38790712393; _qimei_fingerprint=bbe4d9db98a4ef9b564a6c4faab94dec; _qimei_q36=; _qimei_h38=e14785f5b401369215bc88b302000003d1811f; qq_domain_video_guid_verify=9ae1f08110822ceb; pgv_pvid=9851172288; eas_sid=11I711m7S104C6w4I840N5c5i7; LW_uid=71M7N107X4y2T4L4S4D5R7T2r0; LW_sid=a1K7u1J7445274p4R5G50715o0; ptui_loginuin=854597621@qq.com; ua_id=zR9wuQWvlw9LU9F0AAAAALTq-2ODG3uPOhjU7kreTv0=; wxuin=36303889576516; poc_sid=HIqFgGej8812pNUWMbYxmKXbBDF5oKomxBKZid5I; rand_info=CAESIMYPzpfznEe08nyj5Nim6rBvBVY8otRcXMnq0v50zW5M; slave_bizuin=3964133034; data_bizuin=3964133034; bizuin=3964133034; data_ticket=qOKlr7PnTyZQiXkekbXsDMz+RqaPt1M+dLXDFitFTMmIKWp13mIzhQb2Zdzx7Vhg; slave_sid=S2Y0VmVvX3dNdjVEckQ4Y0luRTJpUkJvbTFucTE1TXdvOXN5dzlUaG9aUDB4Q2ZXQ1IwbklieWRqOGFLaGlMY2RtTWFLYkI5VDM4VlIyRHpScWRfVWpmZjJiX1FIdkE0c2RhaDE4NUdTSDhKUlB2ZzNJRDF3SHFSZjhtSTZkSnlBN0s4TWdQN1Z3N3ZHaUx3; slave_user=gh_ea87f72ab4a2; xid=10eaa38db5d109c0022c1b07ba05c71a; mm_lang=zh_CN; _clck=3964133034|1|fsj|0; rewardsn=; wxtokenkey=777; _clsk=rt911u|1736737027864|8|1|mp.weixin.qq.com/weheat-agent/payload/record"
 
 # Headers
 headers = {
@@ -38,7 +38,7 @@ headers = {
 }
 
 data = {
-    "token": "xxx",
+    "token": "887771052",
     "lang": "zh_CN",
     "f": "json",
     "ajax": "1",
@@ -66,6 +66,7 @@ def get_page():
 
     count = int(content_json["app_msg_cnt"]) if "app_msg_cnt" in content_json else 0
 
+    print("test")
     # 检查JSON结构体数据
     #print(json.dumps(content_json, ensure_ascii=False, indent=4))
 
