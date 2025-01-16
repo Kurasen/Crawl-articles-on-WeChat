@@ -61,6 +61,7 @@ all_articles = []
 
 def get_page():
 
+    print("123")
     # 获取总的文章数量
     content_json = requests.get(url, headers=headers, params=data).json()
 
